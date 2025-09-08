@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerMitra – Career Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="edit-profile.css" />
+  <script src="edit-profile.js"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">CareerMitra</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#careers">Careers</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#timeline">Timeline</a>
+                <a href="login.html" id="loginLink">Login</a>
+        <a href="#" id="logoutLink" style="display: none">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+    <main class="profile-main">
+      <h2>Edit Your Profile</h2>
+      <form class="profile-card" id="editProfileForm">
+        <label>
+          Education Level:
+          <input
+            type="text"
+            id="education"
+            placeholder="e.g., B.Tech in Computer Science"
+            required
+          />
+        </label>
+
+        <label>
+          Institution Name:
+          <input
+            type="text"
+            id="institution"
+            placeholder="e.g., IIT Bombay"
+            required
+          />
+        </label>
+
+        <label>
+          Graduation Year:
+          <input
+            type="number"
+            id="graduationYear"
+            placeholder="e.g., 2025"
+            min="1900"
+            max="2099"
+            required
+          />
+        </label>
+
+        <label>
+          Location:
+          <input
+            type="text"
+            id="location"
+            placeholder="e.g., Pune, Maharashtra"
+          />
+        </label>
+
+        <label>
+          LinkedIn Profile:
+          <input
+            type="url"
+            id="linkedin"
+            placeholder="e.g., https://linkedin.com/in/yourname"
+          />
+        </label>
+
+        <label for="interests">Career Interests:</label>
+        <select id="interests" name="interests" multiple>
+          <option value="Engineering">Engineering</option>
+          <option value="IT">Information Technology</option>
+          <option value="Design">Design</option>
+          <option value="Finance">Finance</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Healthcare">Healthcare</option>
+          <option value="Law">Law</option>
+          <option value="Education">Education</option>
+          <option value="Entrepreneurship">Entrepreneurship</option>
+        </select>
+        <small class="hint" style="text-align: center; color: #00695c;">
+          Hold Ctrl (Windows) or Cmd (Mac) to select multiple
+        </small>
+
+        <label>
+          Career Goals:
+          <textarea
+            id="careerGoals"
+            rows="2"
+            placeholder="e.g., Become a Full-Stack Developer"
+          ></textarea>
+        </label>
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </main>
+  </body>
+  </html>

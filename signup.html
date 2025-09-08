@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Career Counseling</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <main class="auth-main">
+    <div class="auth-container">
+      <h2>Create an Account</h2>
+      <form id="signupForm">
+        <div>
+          <input type="text" id="signupName" placeholder="Enter Full Name" required />
+        </div>
+        <div>
+          <input type="email" id="signupEmail" placeholder="Enter Email" required />
+        </div>
+        <div>
+          <input type="password" id="signupPassword" placeholder="Enter Password" required />
+        </div>
+        <div>
+          <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required />
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="auth-link">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+      <div id="signupMsg" style="text-align: center; color: red;"></div>
+    </div>
+  </main>
+
+  <script src="signup.js"></script>
+</body>
+</html>

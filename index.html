@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerMitra – Career Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">CareerMitra</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#careers">Careers</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#timeline">Timeline</a>
+                <a href="login.html" id="loginLink">Login</a>
+        <a href="#" id="logoutLink" style="display: none">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Your Career, Your Path 🚀</h2>
+      <p>Discover the best courses & careers based on your interests and skills.</p>
+      <a href="#quiz" class="btn">Take the Quiz</a>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="section">
+    <h2 class="section-title">Aptitude & Interest Quiz</h2>
+    <div class="card">
+      <label>Q1: Which subject do you enjoy the most?</label>
+      <select id="q1">
+        <option value="science">Science</option>
+        <option value="math">Math</option>
+        <option value="arts">Arts</option>
+        <option value="commerce">Commerce</option>
+      </select>
+
+      <label>Q2: What do you prefer?</label>
+      <select id="q2">
+        <option value="research">Research & Experiments</option>
+        <option value="numbers">Numbers & Logic</option>
+        <option value="creativity">Creativity & Expression</option>
+        <option value="business">Business & Management</option>
+      </select>
+
+      <button onclick="showResult()">Get Recommendation</button>
+
+      <div id="result" class="result hidden"></div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section id="careers" class="section alt">
+    <h2 class="section-title">Course-to-Career Mapping</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Science Stream</h3>
+        <ul>
+          <li>Engineering → Software Developer, Data Scientist</li>
+          <li>Medical → Doctor, Research Scientist</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Arts Stream</h3>
+        <ul>
+          <li>Design → Graphic Designer, Animator</li>
+          <li>Humanities → Journalist, Psychologist</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Commerce Stream</h3>
+        <ul>
+          <li>B.Com → Accountant, Financial Analyst</li>
+          <li>MBA → Business Manager, Entrepreneur</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Math Lovers</h3>
+        <ul>
+          <li>Statistics → Data Analyst, Actuary</li>
+          <li>Pure Math → Professor, Researcher</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colleges -->
+  <section id="colleges" class="section">
+    <h2 class="section-title">Nearby Colleges</h2>
+    <div class="map-card">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.125417113678!2d-122.4194154846806!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2b3e7c7d%3A0xbb0!2sGovernment%20College!5e0!3m2!1sen!2sus!4v1618355168547" 
+        width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="section alt">
+    <h2 class="section-title">Admission & Scholarship Timeline</h2>
+    <div class="timeline">
+      <div class="step green">March – Entrance Exams Start</div>
+      <div class="step yellow">May – Application Deadlines</div>
+      <div class="step blue">July – Scholarship Forms</div>
+      <div class="step red">August – College Admissions</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CareerMitra | Hackathon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
